@@ -1,1 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Figma Resources for Developers</title>
+    <style>
+      :root {
+        --accent: rgb(0, 145, 255);
+        --background: #fff;
+        --text: #000;
+        --gap: 3rem;
+      }
+      @media (prefers-color-scheme: dark) {
+        :root {
+          --background: rgb(39, 39, 39);
+          --text: #fff;
+        }
+      }
 
+      body {
+        background: var(--background);
+        color: var(--text);
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+          Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
+          sans-serif;
+        font-size: 16px;
+        margin: 0;
+      }
+      main {
+        margin: 0 auto;
+        max-width: 1024px;
+        padding: 33vh 0;
+        width: 95%;
+      }
+      a {
+        color: var(--accent);
+      }
+      h1 {
+        margin-bottom: calc(var(--gap) * 3);
+        margin-top: 0;
+      }
+      h2 {
+        margin-bottom: calc(var(--gap) * 1.5);
+        margin-top: calc(var(--gap) * 3);
+      }
+      p {
+        margin-bottom: 0;
+        margin-top: calc(var(--gap) / 2);
+      }
+      ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+      }
+      ul.links {
+        display: flex;
+        flex-wrap: wrap;
+        gap: calc(var(--gap) / 3);
+      }
+
+      ul.grid {
+        display: flex;
+        flex-wrap: wrap;
+        gap: var(--gap);
+        margin-top: var(--gap);
+      }
+
+      ul.links li,
+      ul.grid li {
+        width: 100%;
+      }
+      @media (min-width: 700px) {
+        body {
+          font-size: 24px;
+        }
+        ul.links {
+          gap: calc(var(--gap) / 2);
+        }
+        ul.links li {
+          width: calc(50% - var(--gap) / 2 / 2);
+        }
+        ul.grid li {
+          width: calc(50% - var(--gap) / 2);
+        }
+      }
+      ul.grid li iframe {
+        width: 100%;
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <h1>Figma Resources for Developers</h1>
+
+      <h2>Figma developer links</h2>
+      <ul class="links">
+        <li>
+          <a href="https://www.figma.com/plugin-docs/api/api-reference/"
+            >Figma plugin API docs</a
+          >
+        </li>
+        <li>
+          <a href="https://www.figma.com/widget-docs/api/api-reference/"
+            >Figma widget API docs</a
+          >
+        </li>
+        <li>
+          <a href="https://www.figma.com/developers/api">Figma REST API docs</a>
+        </li>
+        <li>
+          <a href="https://www.figma.com/developers">figma.com/developers</a>
+        </li>
+        <li>
+          <a href="https://www.github.com/figma/plugin-samples"
+            >github.com/figma/plugin-samples</a
+          >
+        </li>
+        <li>
+          <a href="https://www.github.com/figma/widget-samples"
+            >github.com/figma/widget-samples</a
+          >
+        </li>
+        <li>
+          <a href="https://www.discord.gg/figma"
+            >Friends of Figma Discord community</a
+          >
+        </li>
+      </ul>
+
+      <h2>Figma videos</h2>
+      <ul class="grid">
+        <li>
+          <iframe
+            width="560"
+            height="315"
+            src="https://www.youtube.com/embed/7foZPzSGICg"
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen
+          ></iframe>
+          <p>UI Mondays: Figma for Developers - Kendo UI</p>
+        </li>
+        <li>
+          <iframe
+            width="560"
+            height="315"
+            src="https://www.youtube.com/embed/pVeER5RGcPc"
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen
+          ></iframe>
+          <p>Office Hours: Building your first widget - Figma</p>
+        </li>
+        <li>
+          <iframe
+            width="560"
+            height="315"
+            src="https://www.youtube.com/embed/Pao4BiG4MEg"
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen
+          ></iframe>
+          <p>Component Properties walkthrough - Thomas Lowry</p>
+        </li>
+        <li>
+          <iframe
+            width="560"
+            height="315"
+            src="https://www.youtube.com/embed/hobK6JqADio"
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen
+          ></iframe>
+          <p>Office Hours: Jumping into component properties - Figma</p>
+        </li>
+        <li>
+          <iframe
+            width="560"
+            height="315"
+            src="https://www.youtube.com/embed/L-WkcC0_kgE"
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen
+          ></iframe>
+          <p>
+            Demystifying plugin development - Gavin McFarland (Config 2022) -
+            Figma
+          </p>
+        </li>
+        <li>
+          <iframe
+            width="560"
+            height="315"
+            src="https://www.youtube.com/embed/a9D1Zg0ZI-A"
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen
+          ></iframe>
+          <p>
+            The real plugins are the friends we make along the way - Tru Narla
+            (Config 2022) - Figma
+          </p>
+        </li>
+        <li>
+          <iframe
+            width="560"
+            height="315"
+            src="https://www.youtube.com/embed/W1uwT-CUmUA"
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen
+          ></iframe>
+          <p>
+            Figma Hacks and Workflow Enhancements with Plugins - Hiroki Tani
+            (Config 2022) - Figma
+          </p>
+        </li>
+        <li>
+          <iframe
+            width="560"
+            height="315"
+            src="https://www.youtube.com/embed/zi8m-0-2yu0"
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen
+          ></iframe>
+          <p>
+            It's better when we design together - Lichin Lin (Config 2022) -
+            Figma
+          </p>
+        </li>
+      </ul>
+    </main>
+  </body>
+</html>
